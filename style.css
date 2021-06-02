@@ -1,0 +1,101 @@
+:root{
+    --primary-color: hsl(233, 47%, 7%);
+    --secundary-color: hsl(244, 38%, 16%);
+    --texto-violeta: hsl(277, 64%, 61%);
+    --main-heading: hsl(0, 0%, 100%);
+    --main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.6rem;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    width: 80vw;
+    min-height: 50vh;
+    margin: auto;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    border-radius: 2rem;
+}
+
+.container-textos {
+    width: 50%;
+    height: 100%;
+    padding: 14rem;
+
+}
+
+.container-foto {
+    width: 50%;
+    background-color: var(--texto-violeta);
+    background-image: url("./images/image-header-desktop.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.container h1{
+    font-size: 3.5rem;
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+.texto-violeta{
+    color: var(--texto-violeta);
+}
+
+.container-textos .parrafo-principal {
+    margin: 2.5rem 0 5rem 0;
+    line-height: 2.5rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.container-textos .cifras{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.cifras div:nth-child(1) .numeros-encima {
+    text-transform: lowercase;
+/*PONGO COMO HERENCIA PRIMER HIJO YA QUE EL PADRE "CIFRAS" ESTA CONFIGURADO
+COMO UPPERCASE Y EL TERCERO DEBE QUEDAR EN MAYUSCULA*/ 
+}
+
+
+
+.cifras .numeros-encima{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--main-heading);
+}
+
+.cifras .texto-debajo{
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    color: hsla(0, 0%, 100%, 0.6);
+    margin: 0.5rem 0 ;
+    font-family: 'Lexend Deca', sans-serif;
+}
+

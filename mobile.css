@@ -1,0 +1,44 @@
+@media (max-width: 1440px) {
+    .container{
+        width: 80%;
+        height: 80vh;
+        flex-direction: column-reverse;
+        border-radius: 2%;
+        margin-top: 15rem;
+        margin-bottom: 4rem;
+    }
+    .container-foto{
+        width: 100%;
+        min-height: 30%;
+        border-radius: 2% 2% 0 0;
+    }
+
+    .container-textos {
+        width: 100%;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .container h1{
+        font-size: 2.7rem;
+        padding: 2rem 0 0 0;
+    }
+
+    .container-textos .parrafo-principal {
+        font-size: 1.5rem;
+    }
+
+    .container-textos .cifras{
+        display: flex;
+        flex-direction: column; 
+        height: 25vh;   
+        margin-bottom: 2rem;
+    }
+
+    .cifras .numeros-encima{
+        font-size: 2.5rem;
+    
+    }
+
+
+}
